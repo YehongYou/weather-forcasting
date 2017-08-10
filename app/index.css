@@ -14,7 +14,7 @@ html body{
 .nav {
    display: block;
    overflow: hidden;
-   height: 70px;
+   height: 100px;
    width: 100%;
    background-color: #FC6C43;
    position: absolute;
@@ -31,7 +31,7 @@ html body{
 .nav .brand{
   color: white;
   display: inline-block;
-  width: 300px;
+  font-size: 1.5em;
 }
 
 .nav .search-input{
@@ -43,7 +43,7 @@ html body{
 
 .nav input{
   margin-right: 20px;
-  height: 30px;
+  height: 50px;
   width:200px;
 }
 
