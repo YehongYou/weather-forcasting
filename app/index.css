@@ -121,10 +121,11 @@ li {
    font-size: 2em;
    color: white;
    text-align: center;
+   padding-top: 50px;
 }
 
 .weather-list {
-  margin-top: 200px;
+  margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

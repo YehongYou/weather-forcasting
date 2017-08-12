@@ -1,6 +1,7 @@
 import React from "react";
 import queryString from'query-string';
 import Timestamp from 'react-timestamp';
+import {Link} from'react-router-dom';
 import api from'../Apis/api';
 import Loading from'./Loading.js';
 
@@ -51,10 +52,13 @@ class Forecast extends React.Component {
                   <div className='weather-list'>
                   {this.state.weatherForecast.map(function(item){
                      return (
-                        <ul key={item.dt} className="item">
+                        <Link to={'/'}><ul key={item.dt} className="item">
                           <li><Timestamp time={item.dt} format='date' /></li>
                           <li>{item.weather[0].description}</li>
-                        </ul>
+                          <li>Humidity: {item.humidity}</li>
+                          <li>Min: {item.temp.min}</li>
+                          <li>Max: {item.temp.max}</li>
+                        </ul></Link>
                      )
                   })}
                   </div>
