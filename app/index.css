@@ -5,6 +5,19 @@ html body{
   background-size: cover;
 }
 
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
+ul{
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 .container{
   display: block;
   width: 100%;
@@ -29,9 +42,13 @@ html body{
 }
 
 .nav .brand{
-  color: white;
   display: inline-block;
   font-size: 1.5em;
+}
+
+.nav h2{
+  color:white;
+  padding-left: 20px;
 }
 
 .nav .search-input{
@@ -83,7 +100,7 @@ html body{
   margin-right: auto;
 }
 
-.home-container button{
+.home-container .button{
   color: white;
   background: #5CB85C;
   border: none;
@@ -94,4 +111,31 @@ html body{
   display: block;
   padding: 7px 0;
   margin: 10px auto;
+}
+
+.forecast-container {
+   margin-top: 100px;
+}
+
+.forecast-container h2{
+   font-size: 2em;
+   color: white;
+   text-align: center;
+}
+
+.weather-list {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.weather-list .item li{
+   font-size: 1.5em;
+   color: white;
+}
+
+.weather-list .item {
+  margin: 20px;
+  text-align: center;
 }
